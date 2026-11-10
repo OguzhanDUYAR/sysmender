@@ -1,28 +1,23 @@
-# Değişiklikler
+# Changelog
 
-## 0.001 · Düzeltme 1 (0.0.1.1)
+All notable changes made under the SysMender name will be recorded here. Dates refer to actual repository changes, not imported upstream history.
 
-- Eski yönetici günlük klasöründe kişisel yazma izni algılanırsa uygulama ayrı korumalı konum hazırlar.
-- Onarım kuyruğu doğrulanmış yolu kullanır. Yönetici raporu, işlem geçmişi, sürücü yedeği ve çocuk süreç geçici dizini aynı yolu izler.
-- Eski günlük dosyaları ve eski klasör izinleri olduğu yerde kalır. Güvenli günlük bulunamazsa Windows işlemleri başlamaz ve sorunlu klasör belirtilir.
+The format is inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). No semantic version or public release is declared for this new repository yet.
 
-## 0.001
+## [Unreleased]
 
-- Sürüm etiketi, ürün bilgisi ve dağıtım dosya adları v0.001 oldu.
-- 14 araç eklendi. Katalogda 66 BT aracı var. Eklenenler arasında BCD okuma, Windows Update servisleri, CBS/DISM günlüğü, USB, TCP/UDP, rota, yazılım envanteri, lisans ve yerel güvenlik denetimleri bulunuyor.
-- Yedi belirti için tanılama asistanı, ayrı onarım planı ve takip kontrolü eklendi.
-- Büyük dosya ve içerik eşleşmesi incelemesi ile SHA-256 hesaplama/doğrulama eklendi.
-- İşlem geçmişi, iki JSON raporu karşılaştırma ve azaltılmış paylaşım özeti eklendi.
-- Açık tema, Ctrl+K genel arama ve favoriler eklendi.
-- Canlı izlemeye çalışma süresi ve ağ aktarım hızı eklendi. Disk ve ağ okumaları bağımsız yürütülür.
+### Added
 
-## 5.0
+- Initial monorepo structure for Windows and Linux editions.
+- Imported the supplied Windows Bakım Merkezi v4.4 source baseline without modifying its files.
+- Added project documentation, contribution templates, licensing guidance, and repository validation workflow.
 
-- BT araçları bölümüne 52 işlem, kategori ve arama filtresi, dört okuma profili ve hedefe özel DNS/ICMP/TCP testi eklendi.
-- Olaylar, donanım, güncelleme geçmişi, güvenlik, ağ, yazdırma, depolama ve sürücü araçları aynı kuyruğa ve günlüğe bağlandı.
-- Yönetici eylemleri için etki ve izin bilgisi, yeniden başlatma durumu ve raporlanan sonuçlar eklendi.
-- Tam çalışma günlüğü ve adım sonuçları HTML veya JSON olarak dışa aktarılabiliyor.
-- WinUtil'in yeniden başlatma okuması sabit commit üzerinden uyarlandı. Lisans görüntüleme eklendi.
-- Uzun plan açıklamaları satıra sığacak biçimde düzenlendi. Küçük pencerede ağ hedefi satırı yalnızca ilgili araç seçildiğinde görünür.
-- Kaynak kökeni, lisans, güvenlik, araştırma, test ve SBOM belgeleri eklendi.
+### Planned
 
+- Independently verify the Windows baseline on supported Windows versions.
+- Implement the Linux edition and its capability-aware adapters.
+- Introduce repeatable compatibility and security checks before releases.
+
+## Historical baseline (not a SysMender release)
+
+The imported Windows source identifies itself as **Windows Bakım Merkezi 4.4**. Refer to [`apps/windows/KULLANIM.md`](apps/windows/KULLANIM.md) for the historical feature descriptions. No SysMender release artifact is created by importing it.

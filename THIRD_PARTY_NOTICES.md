@@ -1,8 +1,14 @@
-# Üçüncü taraf bildirimleri
+# Third-party notices
 
-**WinUtil** · Copyright (c) 2022 CT Tech Group LLC. MIT License. Kaynak ChrisTitusTech/winutil, commit `2ef5e5dc7852634bc40ad789a3d1115ee3913c41`. Seçili uygulama ve tercih verileri ile ortam raporundan uyarlanmış yeniden başlatma denetimi. Tam lisans metni aynı paketteki [WinUtil-MIT.txt](WinUtil-MIT.txt) dosyasında ve EXE içindeki Bakim.WinUtil-MIT.txt kaynağındadır. [GitHub deposu](https://github.com/ChrisTitusTech/winutil)
+SysMender builds on the work of others and intends to keep that credit visible.
 
-**Windows Bakım 3.2** · Tarihsel atıf Hugo ZED / Oğuzhan D. İş akışı kökeni Hakkında bölümünde gösterilir.
+## Chris Titus Tech's Windows Utility (WinUtil)
 
-Yerleşik Windows ve .NET bileşenlerinin adları kullanım bağımlılığını belirtir. Bu bileşenlerin ikilileri paketlenmez.
+- **Project:** [ChrisTitusTech/winutil](https://github.com/ChrisTitusTech/winutil)
+- **Origin:** The supplied Windows v4.4 project's documentation describes functionality adapted from WinUtil.
+- **License:** MIT, according to the preserved notice included with the supplied source.
+- **Preserved notice:** [`apps/windows/WinUtil-MIT.txt`](apps/windows/WinUtil-MIT.txt)
+- **Copyright appearing in that notice:** Copyright (c) 2022 CT Tech Group LLC
+- **Exact upstream revision / file-level mapping:** Not yet verified. See [`docs/SOURCE_PROVENANCE.md`](docs/SOURCE_PROVENANCE.md).
 
+The root MIT license applies to the project's original material; all third-party rights and notices must still be respected. Additional dependencies and borrowed components must be documented here before inclusion.
