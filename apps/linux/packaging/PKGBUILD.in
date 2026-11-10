@@ -1,0 +1,31 @@
+pkgname=linuxbakim
+pkgver=0.001
+pkgrel=1
+pkgdesc='Linux maintenance and diagnostics console'
+arch=('any')
+license=('custom:LocalDelivery')
+depends=('python')
+optdepends=('tk: desktop console' 'iproute2: network tools' 'smartmontools: SMART discovery')
+source=('LinuxBakimMerkezi-Source.zip')
+sha256sums=('@SOURCE_SHA256@')
+
+build() {
+  cd "$srcdir/LinuxBakimMerkezi"
+  python build_release.py --portable-only --out "$srcdir/app"
+}
+
+check() {
+  cd "$srcdir/LinuxBakimMerkezi"
+  python -W error -m unittest discover -s tests
+}
+
+package() {
+  cd "$srcdir/LinuxBakimMerkezi"
+  install -Dm755 "$srcdir/app/LinuxBakimMerkezi-v$pkgver.pyz" "$pkgdir/usr/bin/linuxbakim"
+  install -Dm644 packaging/org.oguzhanduyar.LinuxBakim.desktop \
+    "$pkgdir/usr/share/applications/org.oguzhanduyar.LinuxBakim.desktop"
+  install -Dm644 packaging/org.oguzhanduyar.LinuxBakim.svg \
+    "$pkgdir/usr/share/icons/hicolor/scalable/apps/org.oguzhanduyar.LinuxBakim.svg"
+  install -Dm644 packaging/copyright "$pkgdir/usr/share/licenses/$pkgname/copyright"
+  install -Dm644 README.md "$pkgdir/usr/share/doc/$pkgname/README.md"
+}

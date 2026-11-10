@@ -1,0 +1,76 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "Linux Bakım Merkezi 0.001",
+  "documentNamespace": "https://linuxbakim.invalid/spdx/0.001",
+  "creationInfo": {
+    "creators": [
+      "Organization: Linux Bakim Merkezi Project"
+    ],
+    "created": "2026-11-10T00:00:00Z"
+  },
+  "packages": [
+    {
+      "name": "LinuxBakimMerkezi",
+      "SPDXID": "SPDXRef-App",
+      "versionInfo": "0.001",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "CPython",
+      "SPDXID": "SPDXRef-Python",
+      "versionInfo": ">=3.9 (provided by host)",
+      "downloadLocation": "https://www.python.org/downloads/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "PSF-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "Tcl/Tk",
+      "SPDXID": "SPDXRef-Tk",
+      "downloadLocation": "https://www.tcl-lang.org/software/tcltk/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "TCL",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "Distribution-provided diagnostic executables",
+      "SPDXID": "SPDXRef-HostTools",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Optional external executables discovered at runtime. Command inventory is in linuxbakim/catalog.py and linuxbakim/adapters.py."
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-App"
+    },
+    {
+      "spdxElementId": "SPDXRef-Python",
+      "relationshipType": "RUNTIME_DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-App"
+    },
+    {
+      "spdxElementId": "SPDXRef-Tk",
+      "relationshipType": "OPTIONAL_DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-App"
+    },
+    {
+      "spdxElementId": "SPDXRef-HostTools",
+      "relationshipType": "OPTIONAL_DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-App"
+    }
+  ]
+}

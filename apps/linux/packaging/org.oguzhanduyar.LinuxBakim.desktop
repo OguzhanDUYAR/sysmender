@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Linux Bakım Merkezi
+Name[en]=Linux Maintenance Center
+Comment=Yerel sistem tanılama ve bakım araçları
+Comment[en]=Local system diagnostics and maintenance tools
+Exec=linuxbakim gui
+TryExec=linuxbakim
+Icon=org.oguzhanduyar.LinuxBakim
+Terminal=false
+Categories=System;Monitor;Utility;
+Keywords=system;diagnostics;maintenance;monitoring;

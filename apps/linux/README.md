@@ -1,38 +1,44 @@
-# SysMender for Linux
+# Linux Bakım Merkezi v0.001
 
-**Distro-aware maintenance. No one-size-fits-all shell tricks.**
+Geliştiren **Oguzhan DUYAR** · Developed by **Oguzhan DUYAR**
 
-SysMender for Linux is the planned companion to the Windows edition. No implementation, installer, or supported-distribution certification is included yet.
+Masaüstünde Türkçe/İngilizce, koyu/açık tema, arama, oturum favorileri ve canlı CPU, RAM, takas, disk ve ağ ölçümleri. Aynı çekirdek, grafik oturum olmadan komut satırında da çalışır.
 
-## What we want this edition to do
+## Başlatma
 
-Bring together read-only system inventory, log diagnostics, network and service checks, storage and package inspection, security posture, and guided troubleshooting under one practical interface.
+Python 3.9 veya üzeri gerekir. Grafik arayüz ayrıca Python Tk ve çalışan bir X11 veya XWayland oturumu ister.
 
-A desktop UI and headless CLI should share one core. Each Linux environment will be detected by its capabilities rather than guessed from its distribution name.
+~~~sh
+python3 LinuxBakimMerkezi-v0.001.pyz gui
+python3 LinuxBakimMerkezi-v0.001.pyz --lang en --json info
+python3 LinuxBakimMerkezi-v0.001.pyz diagnose --scenario network
+~~~
 
-## First platform targets
+Debian ailesinde yerel paket deneme sanal makinesine şu şekilde kurulabilir. Grafik arayüz için paket yöneticisinden `python3-tk` gerekir.
 
-| Family | Primary integration under consideration |
-| --- | --- |
-| Debian / Ubuntu / Mint | APT and systemd-aware providers |
-| Arch / CachyOS | Pacman and systemd-aware providers |
-| Fedora / Rocky / AlmaLinux | RPM / DNF and systemd-aware providers |
-| openSUSE | Zypper, Snapper, and systemd-aware providers |
-| NixOS / SteamOS / immutable systems | Explicit, distribution-specific workflows |
-| Alpine / Void / Gentoo | Specialized package and init adapters |
+~~~sh
+sudo apt install ./linuxbakim_0.001-1_all.deb
+linuxbakim gui
+linuxbakim health
+~~~
 
-These are **development targets**, not tested compatibility guarantees. GUI behavior may differ under Wayland, X11, or headless operation.
+| Komut | İşlev |
+|---|---|
+| `linuxbakim list` | Araç kimlikleri ve adları |
+| `linuxbakim info` | Dağıtım, kernel, mimari, init ve paket yöneticisi |
+| `linuxbakim diagnose --scenario slow` | Seçilen sorun için kontrol dizisi |
+| `linuxbakim run package-verify` | Tek bir aracı çalıştırır |
+| `linuxbakim updates --check` | Mevcut önbellekten güncelleme bilgisi |
+| `linuxbakim security --audit` | Yerel güvenlik göstergeleri |
+| `linuxbakim target 127.0.0.1 --port 22` | Bir hedefte tek TCP portunu dener |
+| `linuxbakim --json monitor --samples 5` | Beş kaynak ölçümünü tek JSON belgesinde döndürür |
+| `linuxbakim report --output inceleme.json` | Ham çıktı içermeyen yerel özet |
+| `linuxbakim repair apt-dependencies` | APT bağımlılık onarımı önizlemesi |
 
-## Planned architecture
+`--lang en` ve `--json` komuttan önce gelir. Çıkış kodları `0` tamamlandı, `1` inceleme veya kısmi erişim, `2` hata, `3` kullanılamıyor, `130` iptal. Tamamlandı durumu komutun çalıştığını belirtir. Ayrıntılı çıktı, IP adresleri ve günlük satırları gibi makineye özgü bilgiler içerebilir.
 
-1. **Capability probe:** Detect operating system, kernel, init, package ecosystem, filesystem, privileges, desktop, and installed management tools.
-2. **Read-only adapters:** Inventory, networking, logs, services, and storage.
-3. **Action engine:** Explain, preview, authorize, run, verify, and log each change.
-4. **User interfaces:** Desktop GUI and scriptable CLI on the same domain layer.
-5. **Compatibility suite:** Containers for low-risk unit/integration coverage; VMs or actual hardware for privileged and graphical workflows.
+## Onarım kapsamı
 
-## How to contribute today
+Sistem değiştiren tek işlev, desteklenen yerel Debian ailesi kurulumlarında APT bağımlılık onarımıdır. `linuxbakim repair apt-dependencies --apply` ile etkileşimli önizleme, açık onay ve paket veritabanı denetimi kullanılır. Sistem çapında geri alma bulunmadığından gerçek makineden önce atılabilir bir Linux VM’de doğrulanmalıdır. Yetkili adım otomatik testlerde taklit edilmiştir.
 
-The best first contributions are a tested capability detector, an adapter interface, a distribution test fixture, or a documented operator workflow. See [`../../ROADMAP.md`](../../ROADMAP.md) and [`../../CONTRIBUTING.md`](../../CONTRIBUTING.md).
-
-**No general `curl | sh`, no automatic root shell, no unsupported repair commands.**
+[Uyumluluk](DISTRO_COMPATIBILITY.md) · [Özellikler](FEATURE_MATRIX.md) · [Testler](TEST_RESULTS.md)
