@@ -1,0 +1,148 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "application",
+      "name": "Windows Bakım Merkezi",
+      "version": "0.001",
+      "bom-ref": "wbm-0.001",
+      "author": "Oguzhan DUYAR"
+    }
+  },
+  "components": [
+    {
+      "type": "data",
+      "name": "WinUtil selected catalog and preferences",
+      "version": "2ef5e5dc7852634bc40ad789a3d1115ee3913c41",
+      "bom-ref": "winutil-data",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "publisher": "CT Tech Group LLC",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/ChrisTitusTech/winutil/tree/2ef5e5dc7852634bc40ad789a3d1115ee3913c41"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "WinUtil environment report restart check (adapted)",
+      "version": "2ef5e5dc7852634bc40ad789a3d1115ee3913c41",
+      "bom-ref": "winutil-readiness",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "publisher": "CT Tech Group LLC",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/ChrisTitusTech/winutil/blob/2ef5e5dc7852634bc40ad789a3d1115ee3913c41/functions/private/Get-WinUtilEnvironmentReport.ps1"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "name": "Microsoft Windows 10 22H2 / Windows 11",
+      "bom-ref": "windows",
+      "scope": "required",
+      "publisher": "Microsoft",
+      "description": "Host OS, Win32 and built-in system tools. Not bundled."
+    },
+    {
+      "type": "framework",
+      "name": "Microsoft .NET Framework",
+      "version": "4.8 or 4.8.1",
+      "bom-ref": "netfx",
+      "scope": "required",
+      "publisher": "Microsoft",
+      "description": "Host framework. WinForms, managed networking, registry, eventing and JSON serializer. Not bundled."
+    },
+    {
+      "type": "application",
+      "name": "Windows PowerShell",
+      "version": "5.1",
+      "bom-ref": "winps",
+      "scope": "required",
+      "publisher": "Microsoft",
+      "description": "OS-provided PowerShell. Cmdlet availability depends on the host."
+    },
+    {
+      "type": "platform",
+      "name": "Windows optional administration modules and interfaces",
+      "bom-ref": "win-admin",
+      "scope": "optional",
+      "publisher": "Microsoft",
+      "description": "CIM, Defender, NetSecurity, BitLocker, SecureBoot, TPM, Storage, ScheduledTasks, VPN, SMB, WUA COM, AppX, PnPUtil, DISM, SFC, CHKDSK, ReAgentC, netsh, gpupdate, gpresult, w32tm, ipconfig, route, powercfg, BCDEdit, Netstat, Tracert and LocalAccounts. OS-managed, not bundled."
+    },
+    {
+      "type": "application",
+      "name": "Windows Package Manager / App Installer",
+      "bom-ref": "winget",
+      "scope": "optional",
+      "publisher": "Microsoft",
+      "description": "Host App Installer. Not bundled. Version follows the installed system component.",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/microsoft/winget-cli"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "wbm-0.001",
+      "dependsOn": [
+        "winutil-data",
+        "winutil-readiness",
+        "windows",
+        "netfx",
+        "winps",
+        "win-admin",
+        "winget"
+      ]
+    },
+    {
+      "ref": "winutil-data",
+      "dependsOn": []
+    },
+    {
+      "ref": "winutil-readiness",
+      "dependsOn": []
+    },
+    {
+      "ref": "windows",
+      "dependsOn": []
+    },
+    {
+      "ref": "netfx",
+      "dependsOn": []
+    },
+    {
+      "ref": "winps",
+      "dependsOn": []
+    },
+    {
+      "ref": "win-admin",
+      "dependsOn": []
+    },
+    {
+      "ref": "winget",
+      "dependsOn": []
+    }
+  ]
+}
+
+
