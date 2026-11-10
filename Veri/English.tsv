@@ -1,0 +1,292 @@
+Bu sürüm için Windows 10 22H2 veya Windows 11 gerekiyor.	This version requires Windows 10 22H2 or Windows 11.
+Windows yönetici izni vermedi.	Windows did not grant administrator permission.
+Bu oturumda aynı türde bir Bakım Merkezi penceresi zaten açık.	A Maintenance Center window of this type is already open in this session.
+Yönetici işlemi tanınmadı.	Unknown administrator action.
+Uygulama verisi bulunamadı: 	App resource not found: 
+Seç	Pick
+İşlem sırası	Action order
+Başlat	Start
+Vazgeç	Cancel
+ · Yönetici araçları	 · Administrator tools
+Yönetici bakımı	Admin maintenance
+Bakım planı	Maintenance plan
+Windows ve disk işlemlerini seçin. Plan, incelemenizden sonra başlar.	Choose Windows and disk actions. Review the plan before it starts.
+Tanılama, Store ve Xbox, geçici dosyalar ve Windows onarımı.	Diagnostics, Store and Xbox, temporary files, and Windows repair.
+Uygulamalar	Applications
+WinGet kataloğunda arayın ve işlemleri paket bazında seçin.	Search the WinGet catalog and choose actions by package.
+Kullanıcı ayarları	User settings
+Dosya Gezgini, tema ve görev çubuğu tercihleri.	File Explorer, theme, and taskbar preferences.
+Windows araçları	Windows tools
+Yerleşik Windows ekranlarına ve bakım kısayollarına ulaşın.	Open built-in Windows settings and maintenance shortcuts.
+Sonuçlar ve günlük	Results and log
+Her adımın durumunu ve Windows araçlarının çıktısını burada izleyin.	Follow each step and view output from Windows tools.
+WINDOWS BAKIM	MAINTENANCE
+M E R K E Z İ	C E N T E R
+ÇALIŞMA ALANI	WORKSPACE
+YÖNETİCİ OTURUMU	ADMIN SESSION
+KULLANICI OTURUMU	STANDARD SESSION
+Hazır	Ready
+İşlem durumu	Operation status
+Plan ilerlemesi	Plan progress
+Sırayı durdur	Stop queue
+Bakım profili	Maintenance profile
+Özel seçim	Custom selection
+Windows ve disk tanılama	Windows and disk diagnostics
+Bileşen onarımı	Component repair
+Hızlı tanılama	Quick diagnostics
+Store ve Xbox tanılaması	Store and Xbox diagnostics
+Seçimi temizle	Clear selection
+NTFS sürücüsü	NTFS drive
+Yönetici araçlarını aç	Open administrator tools
+Bakım adımları	Maintenance steps
+Alan	Area
+İşlem	Action
+Etki / izin	Impact
+Yönetici gerekiyor	Admin required
+Bir adıma tıklayarak açıklamasını görün.	Select a step to see what it does.
+Planı incele	Review plan
+Planı incele  (	Review plan  (
+Sistem Koruması	System Protection
+Önce geçici dosya önizlemesini ayrı bir plan olarak çalıştırın. Ardından yalnızca temizleme adımını seçebilirsiniz.	Run the temporary-file preview as a separate plan. Then select the cleanup step on its own.
+Disk taraması için yerel bir NTFS sürücüsü seçin.	Select a local NTFS drive to scan.
+Bu plan değişiklik yapar. Etkiyi her satırda inceleyin. Çalışan onarım güvenli bir bitiş noktasına kadar devam eder.	This plan makes changes. Review the effect of each step. An active repair is allowed to finish.
+Tanılama adımları sırayla çalışır. Ağ erişimi gereken adımlar aşağıda belirtilir.	Diagnostics run in order. Steps that use the network are marked below.
+ Geçici dosya silme işlemi kalıcıdır.	 Temporary files are deleted permanently.
+Uygulama adı veya paket kimliği	App name or package ID
+Uygulama kategorisi	App category
+Tüm kategoriler	All categories
+Ara	Search
+WinGet uygulama kataloğu	WinGet app catalog
+Uygulama	App
+Kategori	Category
+WinGet kimliği	WinGet ID
+Seçileni kur	Install selected
+Seçileni güncelle	Update selected
+Kurulu uygulamaları listele	List installed apps
+Güncellemeleri listele	List updates
+WinGet'i denetle	Check WinGet
+Bu oturumda WinGet bulunamadı. Windows araçları bölümünden Uygulama Yükleyicisi'ni açın.	WinGet is unavailable in this session. Open App Installer from Windows tools.
+WinGet sorgusu	WinGet query
+WinGet topluluk kaynağının koşullarını kabul ederek sorgulamayı başlatın.	Start the query by accepting the WinGet community source terms.
+Devam ederek WinGet kaynağının ve seçili paketlerin koşullarını kabul edersiniz. Kurucular pencere veya Windows izin isteği açabilir.	Continuing accepts the terms of the WinGet source and selected packages. Installers may show windows or request Windows permission.
+Uygulama planı	App plan
+İlk değişiklikten önceki değer saklanır ve geri alma sırasında kullanılır.	The original value is saved and used when you restore the setting.
+Geri alınabilir kullanıcı ayarları	Reversible user settings
+Ayar	Setting
+Geçerli durum	Current state
+Yedek	Backup
+Aç	Enable
+Kapat	Disable
+Önceki değere dön	Restore previous value
+Durumu yenile	Refresh status
+Okunamadı	Unavailable
+Var	Saved
+Kullanıcı tercihi	User preference
+ Değişiklik bu Windows hesabına uygulanır.	 The change applies to this Windows account.
+Sistem ayarları	System settings
+Depolama	Storage
+Ağ ve internet	Network and internet
+Kurulu uygulamalar	Installed apps
+Kurtarma	Recovery
+Windows Güvenliği	Windows Security
+Bakım ve destek	Maintenance and support
+Uygulama Yükleyicisi	App Installer
+Çalıştırma diğer adları	App execution aliases
+Sürücüleri İyileştir	Optimize Drives
+Hakkında	About
+Windows araçları ayrı pencerelerde açılır. Bakım Merkezi'nin günlüğü, burada açılan araçlardaki işlemleri izlemez.	Windows tools open in separate windows and keep their own activity records.
+WinUtil'in seçili uygulama kataloğu ve kullanıcı tercihleri MIT lisanslı kaynak veriden uyarlandı. Lisans, kaynak paketine dahildir.	Selected app entries and user preferences were adapted from MIT-licensed WinUtil source data. The license is included with the source package.
+Son günlüğü aç	Open last log
+Günlük klasörü	Log folder
+Görünümü kopyala	Copy output
+Adım sonuçları	Step results
+Adım	Step
+Durum	Status
+Sonuç	Result
+CANLI ÇIKTI  /  Tam kayıt günlük dosyasına yazılır	LIVE OUTPUT  /  The log file holds the full record
+Canlı işlem çıktısı	Live operation output
+Bir plan başlatıldığında adımlar ve araç çıktısı burada görünür.	Steps and tool output appear here when a plan starts.
+ Bu işlem için yönetici penceresini açın.	 Open the administrator window for this action.
+ Önizleme hazır.	 A preview is ready.
+ Önce önizleme çalıştırın.	 Run a preview first.
+{0} / {1} paket gösteriliyor · {2} seçili. {3}	Showing {0} / {1} packages · {2} selected. {3}
+Seçimler filtre değiştiğinde korunur.	Selections are kept across filters.
+WinGet yok. Windows araçları → Uygulama Yükleyicisi.	WinGet unavailable. Windows tools → App Installer.
+Bir ayar seçin.	Select a setting.
+ Uygulamaların yeni değeri görmesi için pencereyi veya oturumu yeniden açmanız gerekebilir.	 You may need to reopen the affected window or sign in again.
+Plan hazırlanıyor…	Preparing plan…
+Sıra duracak  •  	Queue will stop  •  
+Hazırlanıyor…	Preparing…
+Çalışan adım tamamlanınca sıra durdurulsun mu? Tamamlandığında pencereyi kapatabilirsiniz.	Stop the queue when the active step finishes? You can then close the window.
+Tanılama	Diagnostics
+Sistem özeti	System overview
+Windows sürümü, disk alanı ve bekleyen yeniden başlatma işaretlerini gösterir.	Shows the Windows version, disk space, and pending restart indicators.
+Yerel inceleme	Local check
+Disk ve donanım olayları	Disk and hardware events
+Sistem günlüğünde son 7 günün disk, NTFS, depolama ve WHEA hatalarını ve uyarılarını inceler.	Checks the System log for disk, NTFS, storage, and WHEA errors and warnings from the last seven days.
+Microsoft bağlantı testi	Microsoft connectivity test
+Windows Update, Store ve Xbox uç noktaları için DNS ve TCP 443 erişimini, ayrıca WinHTTP proxy ayarını gösterir.	Checks DNS and TCP 443 access to Windows Update, Store, and Xbox endpoints and shows the WinHTTP proxy.
+Ağ bağlantısı	Network access
+Store ve Xbox	Store / Xbox
+Paket ve hizmet durumu	Package and service status
+Oturumdaki Store, Xbox ve Gaming Services paketlerini ve ilgili hizmetlerin durumunu listeler.	Lists Store, Xbox, and Gaming Services packages and related service status for this account.
+Microsoft Store kaydını onar	Repair Microsoft Store registration
+Oturumdaki Store ve Store Purchase App paketlerini yeniden kaydeder. Önce Store'u kapatın.	Registers Store and Store Purchase App packages again for this account. Close Store first.
+Paket kaydını değiştirir	Registers apps again
+Xbox paket kaydını onar	Repair Xbox package registration
+Oturumdaki Xbox ve Gaming Services paketlerini yeniden kaydeder. Önce açık oyunları ve Xbox uygulamasını kapatın.	Registers Xbox and Gaming Services packages again for this account. Close games and the Xbox app first.
+Geçici dosyaları önizle	Preview temporary files
+Bu hesabın Temp klasöründe 7 günden eski dosyaları sayar. Bağlantıları, kilitli dosyaları ve yakın zamanda oluşturulan dosyaları atlar.	Counts files older than seven days in this account's Temp folder. It skips links, locked files, and recently created files.
+Önizleme	Preview
+Önizlenen geçici dosyaları temizle	Clean previewed temporary files
+Bu oturumdaki son önizlemede görülen ve o tarihten beri değişmemiş dosyaları siler. Silme kalıcıdır.	Permanently deletes files found by this session's last preview that have remained unchanged.
+Kalıcı dosya silme	Permanent file deletion
+Fiziksel disk sağlığı	Physical disk health
+Windows'un bildirdiği disk sağlığını ve denetleyici sunuyorsa sıcaklık, aşınma ve hata sayaçlarını okur.	Reads disk health from Windows and shows temperature, wear, and error counters when the controller exposes them.
+Bileşen deposu durumunu kontrol et	Check component store health
+DISM CheckHealth ile Windows'un önceden kaydettiği bozulma durumuna bakar.	Uses DISM CheckHealth to check for corruption previously recorded by Windows.
+Hızlı kontrol	Quick check
+Bileşen deposunu derin tara	Scan the component store
+DISM ScanHealth ile bileşen deposunu ayrıntılı tarar. Büyük sistemlerde zaman alabilir.	Uses DISM ScanHealth for a detailed scan. This can take time on large systems.
+Yoğun disk kullanımı	Heavy disk use
+Windows Update taraması	Scan for Windows updates
+Windows Update aracısıyla, bilgisayarın kendi güncelleme kaynağında uygulanabilir güncellemeleri arar.	Asks Windows Update to search this computer's configured source for applicable updates.
+Geri yükleme noktası oluştur	Create a restore point
+Windows Sistem Koruması üzerinden bir nokta oluşturur ve listede doğrular. Sistem Koruması açık olmalıdır.	Creates and verifies a restore point. System Protection must be enabled.
+Sistem koruması	System protection
+Bileşen deposunu onar	Repair the component store
+DISM RestoreHealth ile Windows bileşen deposunu onarır. Windows Update üzerinden dosya indirebilir.	Uses DISM RestoreHealth to repair the Windows component store. It may download files through Windows Update.
+Sistem onarımı	System repair
+Windows sistem dosyalarını onar	Repair Windows system files
+SFC ile korunan sistem dosyalarını tarar ve onarır. DISM onarımı da seçildiyse onun ardından çalışır.	Scans and repairs protected files with SFC. If DISM repair is selected, SFC follows it.
+NTFS sürücüsünü çevrimiçi tara	Scan an NTFS drive online
+CHKDSK /scan ile seçilen yerel, sabit NTFS sürücüsünü tarar. Windows çevrimiçi onarım yapabilir.	Scans the selected local fixed NTFS drive with CHKDSK /scan. Windows may perform online repairs.
+Disk taraması / onarım	Disk scan / repair
+Eski Windows bileşenlerini temizle	Clean up old Windows components
+Windows'un DISM bileşen temizliğini çalıştırır. Windows güncellemelerinin geri alma tabanını sıfırlayan /ResetBase seçeneğini kullanmaz.	Runs standard DISM component cleanup and preserves the Windows Update rollback baseline.
+Sistem bileşeni temizliği	System component cleanup
+Ağ	Network
+DNS önbelleğini temizle	Flush the DNS cache
+Windows DNS istemcisinin geçici çözümleme önbelleğini boşaltır.	Clears the temporary name resolution cache of the Windows DNS client.
+Önbelleği temizler	Clears the cache
+Bu işlem için uygun oturum türünü açın.	Open the correct session type for this action.
+Geçerli, yerel ve sabit bir NTFS sürücüsü seçin.	Select a valid local fixed NTFS drive.
+DNS önbelleği temizlendi.	The DNS cache was flushed.
+Bilinmeyen bakım işlemi.	Unknown maintenance action.
+Windows {0} {1} · {2} · derleme {3}{4}	Windows {0} {1} · {2} · build {3}{4}
+64 bit Windows	64-bit Windows
+32 bit Windows	32-bit Windows
+Sistem sürücüsü 	System drive 
+Yeniden başlatma işareti bulunmadı.	No pending restart indicator was found.
+Yeniden başlatma işaretleri	Pending restart indicators
+{0}  {1}  {2} kullanılabilir / {3} toplam	{0}  {1}  {2} available / {3} total
+Sistem özeti hazır.	System overview is ready.
+Bekleyen yeniden başlatma işaretleri var.	Pending restart indicators were found.
+Windows bileşen servisi	Windows component servicing
+Bekleyen dosya işlemleri	Pending file operations
+Windows yeniden başlatma bekliyor. Yeniden başlattıktan sonra tekrar çalıştırın.	Windows is waiting for a restart. Run this action again after restarting.
+Olay açıklaması bu sistemde bulunamadı.	The event description is unavailable on this system.
+{0:yyyy-MM-dd HH:mm:ss} · {1} · Kimlik {2} · {3}	{0:yyyy-MM-dd HH:mm:ss} · {1} · ID {2} · {3}
+Son 7 günde eşleşen olay bulunmadı.	No matching events were found in the last seven days.
+olay bulundu. Tarih ve ayrıntılar günlükte.	events found. See the log for dates and details.
+Kapsam: DNS ve TCP 443. Oturum açma, TLS ve uygulama sunucusunun yanıtı ayrı kontrollerdir.	The test covers DNS and TCP 443. Sign-in, TLS, and application server responses require separate checks.
+Örnek uç noktalar erişilebilir.	The sampled endpoints are reachable.
+En az bir ağ kontrolü tamamlanamadı. VPN, proxy ve güvenlik duvarı sonuçları etkileyebilir.	At least one network check failed. VPNs, proxies, and firewalls can affect the results.
+ · DNS zaman aşımı	 · DNS timed out
+ adres · TCP 443 	 addresses · TCP 443 
+erişilebilir	reachable
+erişilemedi	unreachable
+İşlem tamamlandı. Ayrıntılar günlükte.	The action finished. See the log for details.
+Windows ek inceleme gerektiren bir durum bildirdi.	Windows reported a result that needs review.
+Windows DISM günlüğü: 	Windows DISM log: 
+DISM tamamlandı ve yeniden başlatma gerekiyor.	DISM finished and requires a restart.
+DISM bileşen deposunda bozulma bildirmedi.	DISM reported no component store corruption.
+Bileşen deposu bulguları günlükte. Çıkış kodu: 0.	See the log for component store findings. Exit code: 0.
+DISM işlemi tamamlandı.	DISM finished.
+CHKDSK hata bulmadı.	CHKDSK found no errors.
+CHKDSK hata buldu ve düzeltti.	CHKDSK found and fixed errors.
+CHKDSK temizlik işlemi bildirdi. Çıktıyı inceleyin.	CHKDSK reported cleanup. Review the output.
+CHKDSK tarayamadı veya tüm hataları düzeltemedi. Çıktıyı inceleyin.	CHKDSK could not scan the drive or fix all errors. Review the output.
+SFC yeniden başlatma gerektirdi.	SFC requires a restart.
+SFC bütünlük ihlali bildirmedi.	SFC reported no integrity violations.
+SFC bozuk dosyaları onardığını bildirdi.	SFC reported that it repaired corrupt files.
+SFC tamamlandı. Sonuç için komut çıktısını veya Windows Logs\\CBS\\CBS.log dosyasını inceleyin.	SFC finished. Review the command output or Windows Logs\\CBS\\CBS.log for the result.
+Windows aracı hata kodu döndürdü: 	The Windows tool returned an error code: 
+Dosya uzantılarını göster	Show file extensions
+Dosya Gezgini'nde .pdf, .jpg ve .exe gibi uzantıları görünür yapar.	Shows extensions such as .pdf, .jpg, and .exe in File Explorer.
+Gizli dosyaları göster	Show hidden files
+Dosya Gezgini'ndeki gizli dosya görünümünü değiştirir.	Changes whether hidden files are shown in File Explorer.
+Uygulamalarda koyu görünüm	Use dark mode for apps
+Windows temasını izleyen uygulamaların görünümünü değiştirir.	Changes the appearance of apps that follow the Windows theme.
+Windows'ta koyu görünüm	Use dark mode for Windows
+Başlat ve görev çubuğu gibi Windows yüzeylerinin temasını değiştirir.	Changes the theme for Windows surfaces such as Start and the taskbar.
+Görev çubuğunda Görevi Sonlandır	End task on the taskbar
+Uygulamanın sağ tıklama menüsüne işlemi sonlandırma seçeneği ekler.	Adds an End task option to an app's taskbar context menu.
+Bu Windows sürümünde yok	Unavailable on this version of Windows
+Windows varsayılanı	Windows default
+Açık	On
+Kapalı	Off
+Özel değer (	Custom value (
+Geri al	Restore
+Bu ayar normal kullanıcı oturumunda ve uyumlu bir Windows sürümünde kullanılabilir.	This setting requires a standard user session and a compatible version of Windows.
+Ayar uygulama dışında değiştirildi. Kayıtlı önceki değer korunuyor.	The setting changed outside this app. The saved original value was kept.
+Bu ayar için kayıtlı önceki değer yok.	There is no saved value for this setting.
+Yazılan değer doğrulanamadı. Yedek saklandı.	The new value could not be verified. The backup was kept.
+Değer zaten istenen durumdaydı.	The value was already in the requested state.
+Değer doğrulandı. Etkiyi görmek için ilgili pencereyi yeniden açın veya oturumu kapatıp açın.	The value was verified. Reopen the affected window or sign in again to see the change.
+Mevcut değer türü beklenenden farklı. Ayar değiştirilmedi.	The current value has an unexpected type. No change was applied.
+Ayar yedeği okunamadı.	The settings backup could not be read.
+Ayar yedeğinin biçimi geçersiz.	The settings backup has an invalid format.
+Tarama konumu: 	Scan location: 
+Kullanıcı Temp klasörü bulunamadı veya erişilemiyor.	The user's Temp folder is missing or inaccessible.
+{0} aday dosya · {1} mantıksal boyut · {2} atlanan/erişilemeyen kayıt.	{0} candidate files · {1} logical size · {2} skipped or inaccessible entries.
+ Tarama sınırına ulaşıldı. Yalnızca bulunan dosyalar temizlenebilir.	 The scan limit was reached. Cleanup covers the files found so far.
+Önizleme bir saat geçerli. Temizlik yalnızca kimliği ve içeriğe ilişkin bilgileri aynı kalan dosyaları kapsar.	The preview is valid for one hour. Cleanup covers files whose identity and metadata are unchanged.
+Önce geçici dosya önizlemesini çalıştırın.	Run the temporary-file preview first.
+ önizlenen dosya yeniden doğrulanıyor.	 previewed files are being rechecked.
+{0} dosya silinmek üzere işaretlendi · {1} mantıksal boyut · {2} değişmiş, eksik veya erişilemeyen dosya atlandı.	{0} files marked for deletion · {1} logical size · {2} changed, missing, or inaccessible files skipped.
+Geçici dosya işlemi yerel bir NTFS sürücüsü gerektirir.	Temporary-file cleanup requires a local NTFS drive.
+Önizleme yolu Temp klasörü dışında.	The preview path is outside the Temp folder.
+Klasör erişilemez veya bir bağlantı içeriyor: 	The folder is inaccessible or contains a link: 
+Tamamlandı	Completed
+İnceleme gerekli	Review needed
+Başarısız	Failed
+Atlandı	Skipped
+Günlük yazılamadı. Sıradaki işlemler başlatılmayacak. 	The log could not be written. Remaining actions will be skipped. 
+Sıra durduruldu.	The queue was stopped.
+Önceki DISM onarımı tamamlanmadı veya yeniden başlatma bekliyor.	The previous DISM repair failed or requires a restart.
+Önceki kurucu yeniden başlatma gerektirdi.	The previous installer requires a restart.
+Günlük kaydedilemedi.	The log could not be saved.
+{0} tamamlandı · {1} inceleme · {2} başarısız · {3} atlandı	{0} completed · {1} need review · {2} failed · {3} skipped
+ · Yeniden başlatma gerekiyor	 · Restart required
+İşlem günlüğü başlatılamadı. 	Could not start the operation log. 
+ · Günlük eksik	 · Incomplete log
+Komut bitti. Bir alt süreç çıktı kanallarını açık tuttuğu için son satırlar eksik olabilir.	The command finished. A child process kept its output open, so final lines may be missing.
+Uygulama kataloğunda geçersiz veya yinelenen bir kayıt var.	The app catalog contains an invalid or duplicate entry.
+WinGet sürümü	WinGet version
+WinGet ile eşleşen kurulu uygulamalar	Installed apps matched by WinGet
+Uygulama güncellemelerini listele	List app updates
+Geçersiz WinGet paket kimliği.	Invalid WinGet package ID.
+Kur	Install
+Güncelle	Update
+Kaldır	Uninstall
+Bilinmeyen WinGet işlemi.	Unknown WinGet action.
+Uygulama yönetimini normal kullanıcı penceresinden açın.	Use the standard user window to manage apps.
+WinGet bulunamadı. Microsoft Store'dan Uygulama Yükleyicisi'ni yükleyin veya güncelleyin.	WinGet is unavailable. Install or update App Installer from Microsoft Store.
+WinGet işlemi tamamlandı.	WinGet completed the action.
+Uygulanabilir güncelleme bulunmadı.	No applicable update was found.
+WinGet eşleşen uygulama bulamadı.	WinGet found no matching app.
+Bu Windows sürümü, dil veya mimari için uygun kurucu bulunamadı.	No applicable installer was found for this Windows version, language, or architecture.
+Kurulum için önce Windows'u yeniden başlatın.	Restart Windows before installing.
+Kurulum kullanıcı tarafından iptal edildi.	The user canceled the installer.
+Kurucu yeniden başlatma gerektirdi.	The installer requires a restart.
+WinGet işlemi tamamlanamadı.	WinGet could not complete the action.
+ Komut çıktısını inceleyin.	 Review the command output.
+ Kod: 	 Code: 
+Tarayıcı	Browser
+Ofis ve PDF	Office and PDF
+Medya ve tasarım	Media and design
+Geliştirme	Development
+Araçlar	Utilities
+İletişim	Communication
+Oyun	Gaming

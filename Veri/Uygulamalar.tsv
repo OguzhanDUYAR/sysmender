@@ -1,0 +1,62 @@
+# Kategori	Ad	WinGet kimliği
+Tarayıcı	Chrome	Google.Chrome
+Tarayıcı	Firefox	Mozilla.Firefox
+Tarayıcı	Firefox ESR	Mozilla.Firefox.ESR
+Tarayıcı	Brave	Brave.Brave
+Tarayıcı	Vivaldi	Vivaldi.Vivaldi
+Ofis ve PDF	LibreOffice	TheDocumentFoundation.LibreOffice
+Ofis ve PDF	ONLYOFFICE Desktop	ONLYOFFICE.DesktopEditors
+Ofis ve PDF	Sumatra PDF	SumatraPDF.SumatraPDF
+Ofis ve PDF	PDFsam Basic	PDFsam.PDFsam
+Ofis ve PDF	Zotero	DigitalScholar.Zotero
+Ofis ve PDF	Calibre	calibre.calibre
+Ofis ve PDF	Obsidian	Obsidian.Obsidian
+Medya ve tasarım	VLC (Video Player)	VideoLAN.VLC
+Medya ve tasarım	OBS Studio	OBSProject.OBSStudio
+Medya ve tasarım	HandBrake	HandBrake.HandBrake
+Medya ve tasarım	Audacity	Audacity.Audacity
+Medya ve tasarım	Blender (3D Graphics)	BlenderFoundation.Blender
+Medya ve tasarım	GIMP (Image Editor)	GIMP.GIMP.3
+Medya ve tasarım	Paint.NET	dotPDN.PaintDotNet
+Medya ve tasarım	IrfanView	IrfanSkiljan.IrfanView
+Geliştirme	Git	Git.Git
+Geliştirme	GitHub CLI	GitHub.cli
+Geliştirme	GitHub Desktop	GitHub.GitHubDesktop
+Geliştirme	VS Code	Microsoft.VisualStudioCode
+Geliştirme	Notepad++	Notepad++.Notepad++
+Geliştirme	NodeJS LTS	OpenJS.NodeJS.LTS
+Geliştirme	Python3	Python.Python.3.14
+Geliştirme	PowerShell	Microsoft.PowerShell
+Geliştirme	Windows Terminal	Microsoft.WindowsTerminal
+Geliştirme	WinSCP	WinSCP.WinSCP
+Geliştirme	CMake	Kitware.CMake
+Geliştirme	PuTTY	PuTTY.PuTTY
+Araçlar	7-Zip	7zip.7zip
+Araçlar	NanaZip	M2Team.NanaZip
+Araçlar	PowerToys	Microsoft.PowerToys
+Araçlar	Everything	voidtools.Everything
+Araçlar	ShareX (Screenshots)	ShareX.ShareX
+Araçlar	LocalSend	LocalSend.LocalSend
+Araçlar	Bitwarden	Bitwarden.Bitwarden
+Araçlar	KeePassXC	KeePassXCTeam.KeePassXC
+Tanılama	Crystal Disk Info	CrystalDewWorld.CrystalDiskInfo
+Tanılama	HWiNFO	REALiX.HWiNFO
+Tanılama	CPU-Z	CPUID.CPU-Z
+Tanılama	GPU-Z	TechPowerUp.GPU-Z
+Tanılama	Autoruns	Microsoft.Sysinternals.Autoruns
+Tanılama	Process Monitor	Microsoft.Sysinternals.ProcessMonitor
+Tanılama	Process Explorer	Microsoft.Sysinternals.ProcessExplorer
+Tanılama	TCPView	Microsoft.Sysinternals.TCPView
+İletişim	Discord	Discord.Discord
+İletişim	Slack	SlackTechnologies.Slack
+İletişim	Teams	Microsoft.Teams
+İletişim	Signal	OpenWhisperSystems.Signal
+İletişim	Telegram	Telegram.TelegramDesktop
+İletişim	Thunderbird	Mozilla.Thunderbird
+İletişim	Zoom	Zoom.Zoom
+Oyun	Steam	Valve.Steam
+Oyun	Epic Games Launcher	EpicGames.EpicGamesLauncher
+Oyun	GOG Galaxy	GOG.Galaxy
+Oyun	Battle.net	Blizzard.BattleNet
+Oyun	Heroic Games Launcher	HeroicGamesLauncher.HeroicGamesLauncher
+Oyun	Playnite	Playnite.Playnite
