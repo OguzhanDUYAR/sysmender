@@ -1,4 +1,4 @@
-"""Build an architecture-neutral portable zipapp, Debian package, and source ZIP."""
+"""Build portable, Debian, universal installer, and source archives."""
 from __future__ import annotations
 
 import argparse
@@ -16,8 +16,10 @@ APP = "org.oguzhanduyar.LinuxBakim"
 STAMP = (2026, 1, 1, 0, 0, 0)
 PORTABLE = f"LinuxBakimMerkezi-v{__version__}.pyz"
 SOURCE = "LinuxBakimMerkezi-Source.zip"
-DEB = f"linuxbakim_{__version__}-1_all.deb"
+DEB_REVISION = 2
+DEB = f"linuxbakim_{__version__}-{DEB_REVISION}_all.deb"
 ARCH_RECIPE = "LinuxBakimMerkezi-PKGBUILD"
+UNIVERSAL = f"LinuxBakimMerkezi-v{__version__}-Evrensel-Kurulum.tar.gz"
 LAUNCHER = b"#!/usr/bin/env python3\n"
 
 
@@ -78,18 +80,19 @@ def debian(application):
         "usr/share/doc/linuxbakim/copyright": ((BASE / "packaging" / "copyright").read_bytes(), 0o644),
         "usr/share/doc/linuxbakim/README.md": ((BASE / "README.md").read_bytes(), 0o644),
         "usr/share/doc/linuxbakim/changelog.Debian.gz": (
-            gzip.compress(f"linuxbakim ({__version__}-1) unstable; urgency=medium\n\n  * Initial engineering preview.\n\n"
+            gzip.compress(f"linuxbakim ({__version__}-{DEB_REVISION}) unstable; urgency=medium\n\n  * Recommend the desktop runtime.\n\n"
                           " -- Linux Bakim Merkezi Project <maintainer@linuxbakim.invalid>  Thu, 01 Jan 2026 00:00:00 +0000\n".encode(), mtime=0), 0o644),
     }
     control = f"""Package: linuxbakim
-Version: {__version__}-1
+Version: {__version__}-{DEB_REVISION}
 Architecture: all
 Maintainer: Oguzhan DUYAR <maintainer@linuxbakim.invalid>
 Section: admin
 Priority: optional
 Installed-Size: {(sum(len(content) for content, _ in data.values()) + 1023) // 1024}
 Depends: python3 (>= 3.9)
-Suggests: python3-tk, iproute2, util-linux, smartmontools, pciutils, usbutils
+Recommends: python3-tk
+Suggests: iproute2, util-linux, smartmontools, pciutils, usbutils
 Description: Linux system diagnostics and maintenance console
  Local desktop and headless tools for hardware, services, storage and package
  inspection. The graphical interface requires Python Tk and a display session.
@@ -97,6 +100,20 @@ Description: Linux system diagnostics and maintenance console
     checksums = "".join(f"{hashlib.md5(content, usedforsecurity=False).hexdigest()}  {name}\n" for name, (content, _) in sorted(data.items()))
     controls = {"control": (control.encode(), 0o644), "md5sums": (checksums.encode(), 0o644)}
     return ar_bytes((("debian-binary", b"2.0\n"), ("control.tar.gz", tar_bytes(controls)), ("data.tar.gz", tar_bytes(data))))
+
+
+def universal(application):
+    packaging = BASE / "packaging"
+    entries = {"linuxbakim.pyz": (application, 0o644)}
+    for name in ("setup.py", f"{APP}.svg"):
+        entries[name] = ((packaging / name).read_bytes().replace(b"\r\n", b"\n"), 0o644)
+    manifest = "".join(f"{hashlib.sha256(data).hexdigest()}  {name}\n"
+                       for name, (data, _) in sorted(entries.items()))
+    entries["bundle.sha256"] = (manifest.encode("ascii"), 0o644)
+    entries["install.sh"] = ((packaging / "install.sh").read_bytes().replace(b"\r\n", b"\n"), 0o755)
+    entries["KURULUM.md"] = ((packaging / "KURULUM.md").read_bytes(), 0o644)
+    folder = UNIVERSAL.removesuffix(".tar.gz")
+    return tar_bytes({f"{folder}/{name}": item for name, item in entries.items()})
 
 
 def source():
@@ -118,7 +135,7 @@ def main():
     if not args.portable_only:
         source_zip = source()
         recipe = (BASE / "packaging/PKGBUILD.in").read_bytes()
-        artifacts.update({SOURCE: source_zip, DEB: debian(app), ARCH_RECIPE:
+        artifacts.update({SOURCE: source_zip, DEB: debian(app), UNIVERSAL: universal(app), ARCH_RECIPE:
                           recipe.replace(b"@SOURCE_SHA256@", hashlib.sha256(source_zip).hexdigest().encode("ascii"))})
     for name, data in artifacts.items():
         target = args.out / name

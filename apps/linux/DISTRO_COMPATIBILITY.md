@@ -2,6 +2,8 @@
 
 Her Linux satırı hedef adaptör durumudur ve gerçek konuk testi bekler. Araçlar yerel paketler, oturum ve izinlere bağlıdır.
 
+Dağıtımlar arası kurucunun Python/Tk paket adları ve çevrimdışı çalışma seçenekleri [kurulum kılavuzundadır](packaging/KURULUM.md).
+
 | Hedef | Paket ve init yolu |
 |---|---|
 | Ubuntu, Debian, Linux Mint, Pop!_OS, Zorin, Kali, Raspberry Pi OS | APT/dpkg, systemd algılama, yerel APT onarım adayı |

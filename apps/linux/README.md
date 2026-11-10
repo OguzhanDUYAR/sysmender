@@ -14,10 +14,12 @@ python3 LinuxBakimMerkezi-v0.001.pyz --lang en --json info
 python3 LinuxBakimMerkezi-v0.001.pyz diagnose --scenario network
 ~~~
 
-Debian ailesinde yerel paket deneme sanal makinesine şu şekilde kurulabilir. Grafik arayüz için paket yöneticisinden `python3-tk` gerekir.
+Dağıtımlar arası kurucu için [kurulum kılavuzuna](packaging/KURULUM.md) bakın. Kurucu uygulamayı kullanıcının dizinine yerleştirir ve varsa eksik Python/Tk paketlerini yerel paket yöneticisiyle kurar.
+
+Debian ailesinde yerel paket deneme sanal makinesine şu şekilde kurulabilir. APT varsayılan olarak önerilen grafik arayüz bağımlılığını da kurar.
 
 ~~~sh
-sudo apt install ./linuxbakim_0.001-1_all.deb
+sudo apt install ./linuxbakim_0.001-2_all.deb
 linuxbakim gui
 linuxbakim health
 ~~~
